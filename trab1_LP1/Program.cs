@@ -6,7 +6,15 @@ namespace trab1_LP1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Board board = new Board();
+            Renderer render = new Renderer();
+
+            Player J1 = new Player();
+            Player J2 = new Player();
+
+            render.Render(board);
+
+            Console.ReadKey();
         }
     }
 }
